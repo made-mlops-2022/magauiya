@@ -1,0 +1,22 @@
+params:
+    exp_name: lightgbm_default
+    inference: False
+  
+path:
+    data: "./dataset/heart_cleveland_upload.csv"
+    logs: "./logs"
+    models: "./models"
+    savefile: "./predictions/preds.csv"
+
+data:
+    seed: 42
+    split: 0.1
+    preprocess: False
+  
+model:
+    _target_: lightgbm.LGBMClassifier
+    n_estimators: 100
+
+test:
+    data: "./dataset/test.csv"
+    ckpt: "./models/lightgbm_default.pkl"
