@@ -33,7 +33,7 @@ pip3 install -r requirements.txt
 ```
 
 ## Project Structure
-![structure](./folder_structure.png)
+<img src="./folder_structure.PNG" alt="structure" width="300"/>
 
 ## Train script
 To train the classifier, run following command:
@@ -48,9 +48,11 @@ To inference the model, please you following command:
 python3 main.py params.inference=True path.savefile='path to predictions' test.ckpt='path to checkpoint'
 ```
 
-## Unittests
+## Unittests & Synthetic Dataset
 To run unittests:
 ```
 python3 -m unittest discover ./tests
 ```
+
+Synthetic datasets are generated for unittests and saved in [here](./dataset/)
 
