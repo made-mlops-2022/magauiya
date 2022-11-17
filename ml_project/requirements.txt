@@ -1,0 +1,7 @@
+pandas==1.4.4
+scipy==1.9.1
+scikit-learn
+lightgbm==3.3.3
+matplotlib
+omegaconf==2.2.3
+PyYAML==6.0
